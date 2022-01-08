@@ -1,0 +1,14 @@
+{
+  "name": "@32bitkid/readers",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "tsc --build --clean",
+    "build": "tsc --build",
+    "test": "jest src/"
+  },
+  "author": "J. Holmes <32bitkid@gmail.com>",
+  "license": "ISC"
+}
