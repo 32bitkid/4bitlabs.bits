@@ -24,7 +24,7 @@ $ pnpm add @4bitlabs/vector
 
 ## Documentation
 
-Full documentation for the library can be found [here](https://32bitkid.github.io/4bitlabs.spatial/modules/_4bitlabs_vector.html)
+Full documentation for the library can be found [here](https://32bitkid.github.io/4bitlabs.bits/modules/_4bitlabs_vector.html)
 
 ## Usage
 

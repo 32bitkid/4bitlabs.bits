@@ -1,11 +1,9 @@
 # @4bitlabs/bits
 
-A collection of packages, utilities and apps for decoding assets from
+A collection of low-level packages and utilities for working with bits and bytes. 
 
-This monorepo is a work-in-progress.
-
-- [`@4bitlabs/readers`](./libs/readers/README.md): Basic implementations of `BitReader` in JavaScript/TypeScript.
-- [`@4bitlabs/numeric-deque`](./libs/numeric-deque/README.md): A simple, performant, general-purpose
+- `@4bitlabs/readers`: Basic implementations of `BitReader` for JavaScript/TypeScript.
+- `@4bitlabs/numeric-deque`: A simple, performant, general-purpose
   <abbr title="double-ended queue">_deque_</abbr>, backed by a `TypedArray`.
-
+- `@4bitlabs/vector`: A simple, TypedArray-backed resizable vector data-structure for ints, floats, and bigints
 

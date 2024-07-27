@@ -1,7 +1,7 @@
 {
   "name": "@4bitlabs/vector",
   "version": "0.2.1",
-  "description": "A simple, TypedArray-backed resizable vector data-structure",
+  "description": "A simple, TypedArray-backed resizable vector data-structure for ints, floats, and bigints",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "homepage": "https://32bitkid.github.io/4bitlabs.spatial/modules/_4bitlabs_vector.html",

@@ -9,13 +9,27 @@ A collection of bit-readers for javascript and typescript.
 
 ## Installation
 
-```sh
-# npm
-❯ npm install --save @4bitlabs/readers
+Using npm:
 
-# yarn
-❯ yarn add @4bitlabs/readers
+```shell
+$ npm install --save @4bitlabs/readers
 ```
+
+Using yarn:
+
+```shell
+$ yarn add @4bitlabs/readers
+```
+
+Using pnpm:
+
+```shell
+$ pnpm add @4bitlabs/readers
+```
+
+## Documentation
+
+Full documentation for the library can be found [here](https://32bitkid.github.io/4bitlabs.bits/modules/_4bitlabs_readers.html)
 
 ## Usage
 

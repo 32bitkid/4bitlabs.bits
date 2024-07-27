@@ -7,6 +7,30 @@
 
 A numeric-container backed by a TypedArray ring-buffer. Implements both stack (FILO) and queue (FIFO) methods, a.k.a. _a [deque](https://en.wikipedia.org/wiki/Double-ended_queue)_.
 
+## Installation
+
+Using npm:
+
+```shell
+$ npm install --save @4bitlabs/numeric-deque
+```
+
+Using yarn:
+
+```shell
+$ yarn add @4bitlabs/numeric-deque
+```
+
+Using pnpm:
+
+```shell
+$ pnpm add @4bitlabs/numeric-deque
+```
+
+## Documentation
+
+Full documentation for the library can be found [here](https://32bitkid.github.io/4bitlabs.bits/modules/_4bitlabs_numeric_deque.html)
+
 ## Basic Usage
 
 ```ts
