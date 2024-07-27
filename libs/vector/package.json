@@ -4,11 +4,11 @@
   "description": "A simple, TypedArray-backed resizable vector data-structure for ints, floats, and bigints",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "homepage": "https://32bitkid.github.io/4bitlabs.spatial/modules/_4bitlabs_vector.html",
-  "bugs": "https://github.com/32bitkid/4bitlabs.spatial/issues",
+  "homepage": "https://32bitkid.github.io/4bitlabs.bits/modules/_4bitlabs_vector.html",
+  "bugs": "https://github.com/32bitkid/4bitlabs.bits/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/32bitkid/4bitlabs.spatial.git"
+    "url": "git+https://github.com/32bitkid/4bitlabs.bits.git"
   },
   "scripts": {
     "clean": "tsc --build --clean",

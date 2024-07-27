@@ -8,13 +8,13 @@
   ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "homepage": "https://github.com/32bitkid/sci.js/tree/main/libs/readers#readme",
+  "homepage": "https://32bitkid.github.io/4bitlabs.bits/modules/_4bitlabs_readers.html",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/32bitkid/sci.js.git"
+    "url": "git+https://github.com/32bitkid/4bitlabs.bits.git"
   },
   "bugs": {
-    "url": "https://github.com/32bitkid/sci.js/issues"
+    "url": "https://github.com/32bitkid/4bitlabs.bits/issues"
   },
   "files": [
     "./dist/**/*"
