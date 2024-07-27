@@ -3,6 +3,8 @@
  * <abbr title="least-significant bits">LSB</abbr> bit-readers. Provides a bit-level information extraction from
  * densely-packed bitstreams. This interface provides up to a maximum of 32-bit reads at a time, the largest
  * _bitwise-safe_ integer size.
+ *
+ * @see {@link createBitReader}
  */
 export interface BitReader {
   /**
