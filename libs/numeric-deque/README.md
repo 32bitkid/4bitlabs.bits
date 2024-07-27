@@ -80,3 +80,7 @@ const bytes = new NumericDeque(300, Uint8ClampedArray);
 const signedData = new NumericDeque(16, Int16Array);
 const buffer = new NumericDeque(2_000, Uint32Array);
 ```
+
+## License
+
+[ISC](https://github.com/32bitkid/4bitlabs.bits/blob/HEAD/libs/numeric-deque/LICENSE.txt)

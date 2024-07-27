@@ -96,3 +96,7 @@ As of the _initial_ version, both `MsbReader` and `AsyncBitReader` only support 
 However, those **32-bits** do not need to be _byte-aligned_ bits, and can occur anywhere in the bitstream. This limitation
 is due to the precision of the bitwise operators in javascript. In the future, this might be addressed to allow for
 53-bit reads, the maximum-safe integer size for double-precision numbers.
+
+## License
+
+[ISC](https://github.com/32bitkid/4bitlabs.bits/blob/HEAD/libs/readers/LICENSE.txt)

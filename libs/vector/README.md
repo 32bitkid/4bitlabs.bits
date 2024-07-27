@@ -53,4 +53,4 @@ uint64s.push(0xffff_ffff_ffff_ffffn);
 
 ## License
 
-[ISC](https://github.com/32bitkid/4bitlabs.spatial/blob/HEAD/libs/vector/LICENSE.txt)
+[ISC](https://github.com/32bitkid/4bitlabs.bits/blob/HEAD/libs/vector/LICENSE.txt)
