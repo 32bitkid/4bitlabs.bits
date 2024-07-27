@@ -42,7 +42,7 @@ export class FastLsbReader implements BitReader {
   }
 
   peek32(n: number): number {
-    if (n === 0) return 0;
+    if (n <= 0) return 0;
 
     const idx = this.bitOffset >>> 3;
     const shift = this.bitOffset & 0b111;

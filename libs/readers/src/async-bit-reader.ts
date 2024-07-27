@@ -1,3 +1,4 @@
+/** @hidden @experimental */
 export class AsyncBitReader {
   private readonly r: AsyncIterator<string | Uint8Array>;
 

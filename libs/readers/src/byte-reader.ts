@@ -1,11 +1,19 @@
 import { FileHandle } from 'fs/promises';
 
+/**
+ * @hidden
+ * @experimental
+ */
 export interface ByteReaderOptions {
   position?: number;
   buffer?: Uint8Array;
   offset?: number;
 }
 
+/**
+ * @hidden
+ * @experimental
+ */
 export interface ByteReader {
   read(
     length: number,
@@ -15,6 +23,10 @@ export interface ByteReader {
   close(): Promise<void> | void;
 }
 
+/**
+ * @hidden
+ * @experimental
+ */
 export class AsyncFileByteReader implements ByteReader {
   private readonly file: FileHandle;
   private offset: number;
@@ -43,6 +55,10 @@ export class AsyncFileByteReader implements ByteReader {
   }
 }
 
+/**
+ * @hidden
+ * @experimental
+ */
 export class SyncByteReader implements ByteReader {
   private readonly bytes: Uint8Array;
   private offset: number;
