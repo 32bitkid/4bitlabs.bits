@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/vector@0.2.1...@4bitlabs/vector@0.2.2) (2024-07-27)
+
+### Chore
+
+- updating homepage, repo and bugs links in package.json ([a405edf](https://github.com/32bitkid/4bitlabs.bits/commit/a405edfe3ceb4e8ea90a00f8ab14da9a9ad42f93))
+
+### Docs
+
+- adding documentation for @4bitlabs/numeric-deque ([4af2dfe](https://github.com/32bitkid/4bitlabs.bits/commit/4af2dfee1c4d7dd179b140f23d088a277bd9fe6f))
+- fixing links to license in README.md ([3242f7a](https://github.com/32bitkid/4bitlabs.bits/commit/3242f7a30d3c5932a696c561d72431421195709c))
+
 ## [0.2.1](https://github.com/32bitkid/4bitlabs.spatial/compare/@4bitlabs/vector@0.2.0...@4bitlabs/vector@0.2.1) (2024-07-26)
 
 ### Chore

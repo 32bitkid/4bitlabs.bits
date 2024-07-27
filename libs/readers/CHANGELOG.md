@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/readers@2.0.6...@4bitlabs/readers@2.0.7) (2024-07-27)
+
+### Chore
+
+- updating homepage, repo and bugs links in package.json ([a405edf](https://github.com/32bitkid/4bitlabs.bits/commit/a405edfe3ceb4e8ea90a00f8ab14da9a9ad42f93))
+
+### Docs
+
+- adding documentation for @4bitlabs/numeric-deque ([4af2dfe](https://github.com/32bitkid/4bitlabs.bits/commit/4af2dfee1c4d7dd179b140f23d088a277bd9fe6f))
+- fixing links to license in README.md ([3242f7a](https://github.com/32bitkid/4bitlabs.bits/commit/3242f7a30d3c5932a696c561d72431421195709c))
+- formalizing documentation for @4bitlabs/readers ([235c4b3](https://github.com/32bitkid/4bitlabs.bits/commit/235c4b310868a99211269d728856f2af8dc260fc))
+- Replacing top-level documentation for @4bitlabs/readers ([e0ba0a7](https://github.com/32bitkid/4bitlabs.bits/commit/e0ba0a7a1ebb74aa2c86e6d9c49233c842e338ef))
+
 ## [2.0.6](https://github.com/32bitkid/sci.js/compare/@4bitlabs/readers@2.0.5...@4bitlabs/readers@2.0.6) (2024-06-16)
 
 ### Chore
