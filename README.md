@@ -1,6 +1,6 @@
 # @4bitlabs/bits
 
-A collection of low-level packages and utilities for working with bits and bytes. 
+A collection of focused, zero-dependency, low-level packages and utilities for working with bits and bytes. 
 
 - `@4bitlabs/readers`: Basic implementations of `BitReader` for JavaScript/TypeScript.
 - `@4bitlabs/numeric-deque`: A simple, performant, general-purpose

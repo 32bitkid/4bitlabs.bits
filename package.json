@@ -12,7 +12,6 @@
     "test": "lerna run test",
     "docs": "typedoc --options typedoc.all.json",
     "docs:rebuild": "rimraf docs/ && npm run docs",
-    "clean": "lerna run clean",
     "clean:wipe": "lerna run clean:wipe"
   },
   "repository": {
@@ -29,20 +28,20 @@
     "libs/*"
   ],
   "devDependencies": {
-    "@types/jest": "^29.5.12",
     "@biomejs/biome": "^2.5.4",
+    "@types/node": "^22.20.1",
+    "@vitest/coverage-v8": "^4.1.10",
     "conventional-changelog-eslint": "^5.0.0",
-    "jest": "^29.7.0",
-    "lerna": "^8.1.6",
+    "lerna": "^9.0.7",
     "rimraf": "^6.0.1",
-    "ts-jest": "^29.2.3",
     "typedoc": "^0.28.20",
     "typedoc-plugin-mdn-links": "^5.1.1",
     "typedoc-plugin-missing-exports": "^4.1.4",
-    "typescript": "^5.5.3"
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
   },
   "allowScripts": {
-    "nx@19.5.3": true,
+    "nx@22.7.7": true,
     "fsevents@2.3.3": true
   }
 }

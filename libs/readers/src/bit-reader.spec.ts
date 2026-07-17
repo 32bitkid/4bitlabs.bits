@@ -1,3 +1,5 @@
+import { describe, expect, it } from 'vitest';
+
 import { FastLsbReader } from './fast-lsb-reader';
 import { FastMsbReader } from './fast-msb-reader';
 import { LsbReader } from './lsb-reader';

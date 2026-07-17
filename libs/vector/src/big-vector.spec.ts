@@ -1,3 +1,5 @@
+import { describe, expect, it } from 'vitest';
+
 import { BigVector } from './big-vector';
 
 describe('BigVector', () => {
