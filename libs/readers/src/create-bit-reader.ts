@@ -1,10 +1,10 @@
-import { BitReader } from './bit-reader';
-import { BitReaderOptions } from './bit-reader-options';
+import type { BitReader } from './bit-reader';
+import type { BitReaderOptions } from './bit-reader-options';
 import { FastLsbReader } from './fast-lsb-reader';
 import { FastMsbReader } from './fast-msb-reader';
 import { LsbReader } from './lsb-reader';
 import { MsbReader } from './msb-reader';
-import { TypedArray } from './typed-array';
+import type { TypedArray } from './typed-array';
 
 const safeReaders = { msb: MsbReader, lsb: LsbReader } as const;
 const fastReaders = { msb: FastMsbReader, lsb: FastLsbReader } as const;

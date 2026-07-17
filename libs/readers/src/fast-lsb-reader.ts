@@ -1,6 +1,6 @@
-import { BitReader } from './bit-reader';
-import { ReadonlyDataView } from './readonly-data-view';
-import { TypedArray } from './typed-array';
+import type { BitReader } from './bit-reader';
+import type { ReadonlyDataView } from './readonly-data-view';
+import type { TypedArray } from './typed-array';
 import { copyBuffer } from './utils/copy-buffer';
 
 const ALL_ONES = ~0 >>> 0;

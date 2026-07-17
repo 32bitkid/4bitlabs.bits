@@ -1,11 +1,11 @@
-import { TypedArray, TypedArrayConstructor } from './typed-array';
+import { isIterable } from './is-iterable';
+import { isTypedArray } from './is-typed-array';
+import type { TypedArray, TypedArrayConstructor } from './typed-array';
 import {
   DEFAULT_GROWTH_FN,
-  VectorOptions,
-  VectorFromOptions,
+  type VectorFromOptions,
+  type VectorOptions,
 } from './vector-options';
-import { isTypedArray } from './is-typed-array';
-import { isIterable } from './is-iterable';
 
 /**
  * The {@link Vector} is a resizable data-structure that is backed by a {@link TypedArray}. Unlike a

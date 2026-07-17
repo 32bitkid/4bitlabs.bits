@@ -1,4 +1,4 @@
-import { FileHandle } from 'fs/promises';
+import type { FileHandle } from 'node:fs/promises';
 
 /**
  * @hidden

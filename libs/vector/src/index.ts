@@ -6,12 +6,13 @@
  *
  * @module
  */
+
+export { BigVector } from './big-vector';
 export type {
-  TypedArray,
-  TypedArrayConstructor,
   BigTypedArray,
   BigTypedArrayConstructor,
+  TypedArray,
+  TypedArrayConstructor,
 } from './typed-array';
-export type { VectorOptions, VectorFromOptions } from './vector-options';
 export { Vector } from './vector';
-export { BigVector } from './big-vector';
+export type { VectorFromOptions, VectorOptions } from './vector-options';

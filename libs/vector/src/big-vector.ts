@@ -1,7 +1,7 @@
-import { BigTypedArray, BigTypedArrayConstructor } from './typed-array';
-import { isBigTypedArray } from './is-typed-array';
 import { isIterable } from './is-iterable';
-import { VectorFromOptions, VectorOptions } from './vector-options';
+import { isBigTypedArray } from './is-typed-array';
+import type { BigTypedArray, BigTypedArrayConstructor } from './typed-array';
+import type { VectorFromOptions, VectorOptions } from './vector-options';
 
 const DEFAULT_GROWTH_FN = (current: number) => Math.ceil(current * 1.5);
 

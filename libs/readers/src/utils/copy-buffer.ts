@@ -1,4 +1,4 @@
-import { TypedArray } from '../typed-array';
+import type { TypedArray } from '../typed-array';
 
 export function copyBuffer(
   source: TypedArray | ArrayBuffer,

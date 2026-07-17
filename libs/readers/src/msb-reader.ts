@@ -1,6 +1,6 @@
-import { BitReader } from './bit-reader';
-import { ReadonlyDataView } from './readonly-data-view';
-import { TypedArray } from './typed-array';
+import type { BitReader } from './bit-reader';
+import type { ReadonlyDataView } from './readonly-data-view';
+import type { TypedArray } from './typed-array';
 
 export class MsbReader implements BitReader {
   private readonly view: ReadonlyDataView;
@@ -79,7 +79,7 @@ export class MsbReader implements BitReader {
   skip(n: number): this {
     if (n < 0) throw new Error('out of range: n < 0');
 
-    if (n == 0) return this;
+    if (n === 0) return this;
 
     let bitsToSkip = n;
     if (bitsToSkip > this.bitsRemaining) {

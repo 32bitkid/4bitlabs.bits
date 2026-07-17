@@ -153,10 +153,9 @@ describe.each([
 
   it('should read 32 bits across byte boundaries', () => {
     const br = new BitReader(
-      // prettier-ignore
       Uint8Array.from([
-        0b0000_0000, 0b0000_0000, 0b0000_0000, 0b0000_0000,
-        0b1000_0000, 0b0000_0000, 0b0000_0000, 0b1000_0000,
+        0b0000_0000, 0b0000_0000, 0b0000_0000, 0b0000_0000, 0b1000_0000,
+        0b0000_0000, 0b0000_0000, 0b1000_0000,
       ]),
     );
 
