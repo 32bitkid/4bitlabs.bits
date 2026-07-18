@@ -1,6 +1,6 @@
 {
   "name": "@4bitlabs/vector",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "A simple, TypedArray-backed resizable vector data-structure for ints, floats, and bigints",
   "type": "module",
   "exports": "./dist/index.js",

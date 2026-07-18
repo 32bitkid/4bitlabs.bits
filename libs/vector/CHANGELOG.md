@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/vector@0.2.2...@4bitlabs/vector@1.0.0) (2026-07-18)
+
+### ⚠ BREAKING CHANGES
+
+* **esm:** Migrate build to pure ESM and TypeScript with tsdown
+
+### Features
+
+* **esm:** Migrate build to pure ESM and TypeScript with tsdown
+
+
 ## [0.2.2](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/vector@0.2.1...@4bitlabs/vector@0.2.2) (2024-07-27)
 
 ### Chore

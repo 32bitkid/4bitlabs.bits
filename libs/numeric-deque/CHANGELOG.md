@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/numeric-deque@1.1.7...@4bitlabs/numeric-deque@2.0.0) (2026-07-18)
+
+### ⚠ BREAKING CHANGES
+
+* **esm:** Migrate build to pure ESM and TypeScript with tsdown
+
+### Features
+
+* **esm:** Migrate build to pure ESM and TypeScript with tsdown
+
+
 ## [1.1.7](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/numeric-deque@1.1.6...@4bitlabs/numeric-deque@1.1.7) (2024-07-27)
 
 ### Chore
