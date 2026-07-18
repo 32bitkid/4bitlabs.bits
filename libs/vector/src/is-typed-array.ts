@@ -1,4 +1,4 @@
-import type { BigTypedArray, TypedArray } from './typed-array';
+import type { BigTypedArray, TypedArray } from './typed-array.js';
 
 export function isTypedArray(it: unknown): it is TypedArray {
   if (typeof it !== 'object') return false;

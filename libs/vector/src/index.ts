@@ -7,12 +7,12 @@
  * @module
  */
 
-export { BigVector } from './big-vector';
+export { BigVector } from './big-vector.js';
 export type {
   BigTypedArray,
   BigTypedArrayConstructor,
   TypedArray,
   TypedArrayConstructor,
-} from './typed-array';
-export { Vector } from './vector';
-export type { VectorFromOptions, VectorOptions } from './vector-options';
+} from './typed-array.js';
+export { Vector } from './vector.js';
+export type { VectorFromOptions, VectorOptions } from './vector-options.js';

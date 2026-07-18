@@ -1,6 +1,6 @@
-import type { BitReader } from './bit-reader';
-import type { ReadonlyDataView } from './readonly-data-view';
-import type { TypedArray } from './typed-array';
+import type { BitReader } from './bit-reader.js';
+import type { ReadonlyDataView } from './readonly-data-view.js';
+import type { TypedArray } from './typed-array.js';
 
 export class MsbReader implements BitReader {
   private readonly view: ReadonlyDataView;

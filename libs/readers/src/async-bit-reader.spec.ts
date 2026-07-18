@@ -1,7 +1,7 @@
 import { Readable } from 'node:stream';
 import { describe, expect, it } from 'vitest';
 
-import { AsyncBitReader } from './async-bit-reader';
+import { AsyncBitReader } from './async-bit-reader.js';
 
 const readerOf = (bytes: Uint8Array | number[], times = 1): Readable => {
   let count = 0;

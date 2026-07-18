@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { BigVector } from './big-vector';
+import { BigVector } from './big-vector.js';
 
 describe('BigVector', () => {
   it('should handle unsigned bigints', () => {

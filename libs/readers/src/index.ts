@@ -50,10 +50,10 @@
  * @module
  */
 
-export { AsyncBitReader } from './async-bit-reader';
-export type { BitReader } from './bit-reader';
-export type { BitReaderOptions } from './bit-reader-options';
-export type { ByteReader, ByteReaderOptions } from './byte-reader';
-export { AsyncFileByteReader, SyncByteReader } from './byte-reader';
-export { createBitReader } from './create-bit-reader';
-export type { TypedArray } from './typed-array';
+export { AsyncBitReader } from './async-bit-reader.js';
+export type { BitReader } from './bit-reader.js';
+export type { BitReaderOptions } from './bit-reader-options.js';
+export type { ByteReader, ByteReaderOptions } from './byte-reader.js';
+export { AsyncFileByteReader, SyncByteReader } from './byte-reader.js';
+export { createBitReader } from './create-bit-reader.js';
+export type { TypedArray } from './typed-array.js';

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { Vector } from './vector';
+import { Vector } from './vector.js';
 
 describe('Vector', () => {
   it('should create a dynamic vector', () => {
