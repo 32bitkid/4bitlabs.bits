@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest';
 
-import { FastLsbReader } from './fast-lsb-reader';
-import { FastMsbReader } from './fast-msb-reader';
-import { LsbReader } from './lsb-reader';
-import { MsbReader } from './msb-reader';
+import { FastLsbReader } from './fast-lsb-reader.js';
+import { FastMsbReader } from './fast-msb-reader.js';
+import { LsbReader } from './lsb-reader.js';
+import { MsbReader } from './msb-reader.js';
 
 describe.each([
   ['MsbReader', MsbReader],

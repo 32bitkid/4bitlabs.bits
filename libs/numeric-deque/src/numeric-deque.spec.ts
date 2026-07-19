@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { NumericDeque } from './numeric-deque';
+import { NumericDeque } from './numeric-deque.js';
 
 describe('NumericDeque', () => {
   it('should pop values off the front of the deque', () => {
