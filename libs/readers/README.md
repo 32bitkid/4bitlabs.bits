@@ -1,9 +1,16 @@
-# @4bitlabs/readers [![License][license]][npm] [![NPM Version][version]][npm] [![NPM Downloads][dl]][npm]
+# @4bitlabs/readers 
+
+[![License][license]][npm] 
+[![NPM Version][version]][npm] 
+[![NPM Downloads][dl]][npm]
+[![Ko-fi][kofibadge]][kofi]
 
 [npm]: https://www.npmjs.com/package/@4bitlabs/readers
 [version]: https://img.shields.io/npm/v/%404bitlabs%2Freaders
 [license]: https://img.shields.io/npm/l/%404bitlabs%2Freaders
 [dl]: https://img.shields.io/npm/dy/%404bitlabs%2Freaders
+[kofibadge]: https://shields.io/badge/ko--fi-donate-ff5f5f?logo=ko-fi&style=for-the-badgeKo-fi
+[kofi]: https://ko-fi.com/32bitkid
 
 A collection of bit-readers for javascript and typescript.
 
@@ -13,18 +20,6 @@ Using npm:
 
 ```shell
 $ npm install --save @4bitlabs/readers
-```
-
-Using yarn:
-
-```shell
-$ yarn add @4bitlabs/readers
-```
-
-Using pnpm:
-
-```shell
-$ pnpm add @4bitlabs/readers
 ```
 
 ## Documentation
