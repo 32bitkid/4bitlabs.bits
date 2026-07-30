@@ -51,6 +51,25 @@ const uint64s = new BigVector(BigUint64Array);
 uint64s.push(0xffff_ffff_ffff_ffffn);
 ```
 
+## Resize in-place
+
+The default implementations of `Vector` and `BigVector` reallocated and copied the underlying 
+`ArrayBuffer` on `reallocate()` and `grow()`. In certain use-cases, this could cause undesirable
+garbage-collection pressure. As of ES2024, support for 
+[in-place, resizable `ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/resizable)
+is widely available in both Node and browsers. To use this, provide a `maximumCapacity` when creating a `Vector` or `BigVector`.
+
+```ts
+import { Vector } from '@4bitlabs/vector';
+
+const vec = new Vector(Uint8Array, { initialCapacity: 16, maximumCapcity: 1_024 });
+vec.reallocate(1_024); // growing in-place
+vec.reallocate(128); // shrinking in-place
+```
+
+Attempting to resize a `Vector` beyond its maximum capacity, either through
+adding values with `push()` and `pushN()` _or_ explicit resizing, will throw an exception.
+
 ## License
 
 [ISC](https://github.com/32bitkid/4bitlabs.bits/blob/HEAD/libs/vector/LICENSE.txt)

@@ -1,5 +1,5 @@
 /**
- * A simple, {@link !TypedArray}-backed resizable vector data-structure for ints, floats, and bigints
+ * A simple, {@link !TypedArray}-backed resizable vector data-structure for ints, floats, and bigints.
  *
  * Comes in two flavors: {@link Vector} and {@link BigVector}. Use {@link Vector} for {@link !Number} arrays, and
  * use {@link BigVector} for {@link !BigInt} arrays.

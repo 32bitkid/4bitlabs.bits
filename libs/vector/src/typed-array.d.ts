@@ -16,7 +16,10 @@ export type TypedArray =
  * A constructor of a {@link TypedArray} class.
  */
 export interface TypedArrayConstructor<T extends TypedArray> {
-  new (length?: number): T;
+  new (length: number): T;
+  new (bytes: ArrayBuffer): T;
+
+  BYTES_PER_ELEMENT: number;
 }
 
 /**
@@ -29,4 +32,7 @@ export type BigTypedArray = BigInt64Array | BigUint64Array;
  */
 export interface BigTypedArrayConstructor<T extends BigTypedArray> {
   new (length?: number): T;
+  new (bytes: ArrayBuffer): T;
+
+  BYTES_PER_ELEMENT: number;
 }

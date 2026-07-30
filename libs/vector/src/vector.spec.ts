@@ -195,4 +195,29 @@ describe('Vector', () => {
       expect(vec.copy(0, 5)).toStrictEqual(Float64Array.of(0, 1, 2, 3, 4));
     });
   });
+
+  describe('resizable reallocation', () => {
+    it('should throw when it grows too large', () => {
+      const vec = new Vector(Float64Array, {
+        initialCapacity: 5,
+        maximumCapacity: 10,
+        growthFn: (prev) => prev * 2,
+      });
+
+      expect(vec.length).toBe(0);
+      expect(vec.capacity).toBe(5);
+      vec.pushN([1, 2, 3, 4, 5]);
+      expect(vec.length).toBe(5);
+      expect(vec.capacity).toBe(5);
+      vec.push(1);
+      expect(vec.length).toBe(6);
+      expect(vec.capacity).toBe(10);
+      vec.pushN([1, 2, 3, 4]);
+      expect(vec.length).toBe(10);
+      expect(vec.capacity).toBe(10);
+      expect(() => vec.push(1)).toThrow(
+        'Reallocation Error: requestedCapacity(20) exceeds maximumCapacity(10)',
+      );
+    });
+  });
 });

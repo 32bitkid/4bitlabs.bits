@@ -24,6 +24,13 @@ export interface VectorOptions {
    * @defaultValue `(current: number) => Math.ceil(current * 1.5)`
    */
   growthFn?: (current: number) => number;
+  /**
+   * The maximum capacity of the {@link Vector}. If set, the underlying {@link ArrayBuffer} will be resized _in-place_
+   * rather than reallocated.
+   *
+   * @defaultValue `undefined`.
+   */
+  maximumCapacity?: number;
 }
 
 /**

@@ -50,6 +50,7 @@ export class Vector<T extends TypedArray> {
   private readonly Type: TypedArrayConstructor<T>;
   private readonly growthFn: (current: number) => number;
 
+  private _bytes: ArrayBuffer;
   private _array: T;
   private _capacity: number;
   private _length: number;
@@ -110,13 +111,20 @@ export class Vector<T extends TypedArray> {
     const {
       initialCapacity = 0,
       initialLength = 0,
+      maximumCapacity,
       growthFn = DEFAULT_GROWTH_FN,
     } = typeof options === 'number' ? { initialCapacity: options } : options;
     this.Type = Type;
     this.growthFn = growthFn;
     this._length = Math.ceil(initialLength);
     this._capacity = Math.ceil(Math.max(initialCapacity, this._length));
-    this._array = new Type(this._capacity);
+    this._bytes = new ArrayBuffer(
+      this._capacity * Type.BYTES_PER_ELEMENT,
+      maximumCapacity
+        ? { maxByteLength: maximumCapacity * Type.BYTES_PER_ELEMENT }
+        : undefined,
+    );
+    this._array = new Type(this._bytes);
   }
 
   /**
@@ -302,12 +310,26 @@ export class Vector<T extends TypedArray> {
    */
   reallocate(capacity: number = this._length): this {
     if (this._capacity === capacity) return this;
+
     const newLength = Math.min(this.length, capacity);
-    const array = new this.Type(capacity);
-    array.set(this._array.subarray(0, newLength), 0);
+
+    if (this._bytes.resizable) {
+      const newByteLength = capacity * this.Type.BYTES_PER_ELEMENT;
+      if (newByteLength > this._bytes.maxByteLength)
+        throw new Error(
+          `Reallocation Error: requestedCapacity(${capacity}) exceeds maximumCapacity(${this._bytes.maxByteLength / this.Type.BYTES_PER_ELEMENT})`,
+        );
+      this._bytes.resize(newByteLength);
+    } else {
+      const bytes = new ArrayBuffer(capacity * this.Type.BYTES_PER_ELEMENT);
+      const array = new this.Type(bytes);
+      array.set(this._array.subarray(0, newLength), 0);
+      this._bytes = bytes;
+      this._array = array;
+    }
+
     this._capacity = capacity;
     this._length = newLength;
-    this._array = array;
     return this;
   }
 
@@ -317,6 +339,13 @@ export class Vector<T extends TypedArray> {
   clear(): this {
     this._length = 0;
     return this;
+  }
+
+  /**
+   * Compact the underlying {@link ArrayBuffer}.
+   */
+  compact() {
+    this.reallocate(this.length);
   }
 
   /**

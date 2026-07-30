@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { BigVector } from './big-vector.js';
+import { Vector } from './vector.js';
 
 describe('BigVector', () => {
   it('should handle unsigned bigints', () => {
@@ -108,5 +109,30 @@ describe('BigVector', () => {
       BigInt(1),
       BigInt(0),
     ]);
+  });
+
+  describe('resizable reallocation', () => {
+    it('should throw when it grows too large', () => {
+      const vec = new BigVector(BigInt64Array, {
+        initialCapacity: 5,
+        maximumCapacity: 10,
+        growthFn: (prev) => prev * 2,
+      });
+
+      expect(vec.length).toBe(0);
+      expect(vec.capacity).toBe(5);
+      vec.pushN([1n, 2n, 3n, 4n, 5n]);
+      expect(vec.length).toBe(5);
+      expect(vec.capacity).toBe(5);
+      vec.push(1n);
+      expect(vec.length).toBe(6);
+      expect(vec.capacity).toBe(10);
+      vec.pushN([1n, 2n, 3n, 4n]);
+      expect(vec.length).toBe(10);
+      expect(vec.capacity).toBe(10);
+      expect(() => vec.push(1n)).toThrow(
+        'Reallocation Error: requestedCapacity(20) exceeds maximumCapacity(10)',
+      );
+    });
   });
 });
