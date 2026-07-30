@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/numeric-deque@2.0.0...@4bitlabs/numeric-deque@2.0.1) (2026-07-30)
+
+**Note:** Version bump only for package @4bitlabs/numeric-deque
+
+
+
+
+
 ## [2.0.0](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/numeric-deque@1.1.7...@4bitlabs/numeric-deque@2.0.0) (2026-07-18)
 
 ### ⚠ BREAKING CHANGES

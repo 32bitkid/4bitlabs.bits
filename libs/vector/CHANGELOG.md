@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/vector@1.0.0...@4bitlabs/vector@1.1.0) (2026-07-30)
+
+### Features
+
+* **vector:** Add support for in-place, resizable backing ArrayBuffer
+
+
 ## [1.0.0](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/vector@0.2.2...@4bitlabs/vector@1.0.0) (2026-07-18)
 
 ### ⚠ BREAKING CHANGES

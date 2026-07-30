@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/readers@3.0.0...@4bitlabs/readers@3.0.1) (2026-07-30)
+
+**Note:** Version bump only for package @4bitlabs/readers
+
+
+
+
+
 ## [3.0.0](https://github.com/32bitkid/4bitlabs.bits/compare/@4bitlabs/readers@2.0.7...@4bitlabs/readers@3.0.0) (2026-07-18)
 
 ### ⚠ BREAKING CHANGES
