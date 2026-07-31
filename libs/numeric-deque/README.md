@@ -10,7 +10,7 @@
 [license]: https://img.shields.io/npm/l/%404bitlabs%2Fnumeric-deque
 [dl]: https://img.shields.io/npm/dy/%404bitlabs%2Fnumeric-deque
 [kofibadge]: https://shields.io/badge/ko--fi-donate-ff5f5f?logo=ko-fi&style=for-the-badgeKo-fi
-[kofi]: https://ko-fi.com/32bitkid
+[kofi]: https://ko-fi.com/thirtytwo
 
 A numeric-container backed by a TypedArray ring-buffer. Implements both stack (FILO) and queue (FIFO) methods, a.k.a. _a [deque](https://en.wikipedia.org/wiki/Double-ended_queue)_.
 

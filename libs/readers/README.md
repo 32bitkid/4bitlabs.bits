@@ -10,7 +10,7 @@
 [license]: https://img.shields.io/npm/l/%404bitlabs%2Freaders
 [dl]: https://img.shields.io/npm/dy/%404bitlabs%2Freaders
 [kofibadge]: https://shields.io/badge/ko--fi-donate-ff5f5f?logo=ko-fi&style=for-the-badgeKo-fi
-[kofi]: https://ko-fi.com/32bitkid
+[kofi]: https://ko-fi.com/thirtytwo
 
 A collection of bit-readers for javascript and typescript.
 
